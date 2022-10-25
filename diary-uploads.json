@@ -1,1 +1,37 @@
-[{"title":"Johannes första inlägg","diaryText":"Hej detta är mitt första inlägg"},{"title":"Johannes andra inlägg","diaryText":"Hej detta är mitt andra inlägg"},{"title":"Ardi är bög","diaryText":"Hej idag snackar jag messenger med Ardi, han berättade precis till mig att han är bög. Ha det så bra!"}]
+[
+  {
+    "title": "Johannes första inlägg",
+    "diaryText": "Hej detta är mitt första inlägg",
+    "date": "2022-10-25"
+  },
+  {
+    "title": "Johannes andra inlägg",
+    "diaryText": "Hej detta är mitt andra inlägg",
+    "date": "2022-10-25"
+  },
+  {
+    "title": "Ardi är bög",
+    "diaryText": "Hej idag snackar jag messenger med Ardi, han berättade precis till mig att han är bög. Ha det så bra!",
+    "date": "2022-10-25"
+  },
+  {
+    "title": "Testar LocalDate",
+    "diaryText": "Hej jag skriver bara detta inlägg eftersom jag ska testa LocalDate funktionen.",
+    "date": "2022-10-25"
+  },
+  {
+    "title": "Testar igen",
+    "diaryText": "Detta är bara ett test",
+    "date": "2022-10-25"
+  },
+  {
+    "title": "Test-GitHub",
+    "diaryText": "Hej detta är ett test innan jag pushar upp till github",
+    "date": "2022-10-25"
+  },
+  {
+    "title": "Test",
+    "diaryText": "asdasd",
+    "date": "2022-10-25"
+  }
+]

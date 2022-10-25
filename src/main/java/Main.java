@@ -4,7 +4,9 @@ import org.w3c.dom.Text;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -23,6 +25,9 @@ public class Main {
         return new String(Files.readAllBytes(Paths.get(file)));
     }
 
+    private static void printRecentPost() {
+
+    }
 
 
 
@@ -49,7 +54,8 @@ public class Main {
                     List<Post> tempPosts = List.of(mapper.readValue(Paths.get("diary-uploads.json").toFile(), Post[].class));
                     for (Post post : tempPosts) {
                         System.out.println("Titel: " + post.getTitle());
-                        System.out.println("Text: " + post.getDiaryText() + "\n");
+                        System.out.println("Text: " + post.getDiaryText());
+                        System.out.println("Datum: " + post.getDate() + "\n");
                     }
 
 
@@ -73,15 +79,20 @@ public class Main {
                     //String diaryText;
                     //diaryText = scanner.nextLine();
                     post.setDiaryText(scanner.nextLine());
+                    post.setDate(LocalDate.now().toString());
                     tempPost.add(post);
 
 
                     mapper.writeValue(Paths.get("diary-uploads.json").toFile(), tempPost);
                     String file = "diary-uploads.json";
                     String json = readFileAsString(file);
-                    System.out.println(json);
 
-
+                    //Skriver ut användarens inlägg efter att användaren lagt upp
+                    for (int i=0; i<1; i++) {
+                        System.out.println("Titel: " + post.getTitle());
+                        System.out.println("Text: " + post.getDiaryText());
+                        System.out.println("Datum: " + post.getDate() + "\n");
+                    }
 
 
 
